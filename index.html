@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="acc" oninput="check()"><p id="demo"></p>
+
+<script>
+    function check() {
+            let acc = document.getElementById("acc").value;
+            reg = /^[_a-z0-9]{6,}$/;
+            if(reg.test(acc)){
+                document.getElementById("demo").innerHTML  = "ok";
+            }else {
+                document.getElementById("demo").innerHTML = "ko hop le"
+            }
+    }
+</script>
+</body>
+</html>
